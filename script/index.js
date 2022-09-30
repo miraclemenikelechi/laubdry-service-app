@@ -4,5 +4,5 @@ const
 
 signIn.onclick = (event) => {
     event.preventDefault();
-    location.href = `${origin}/pages/home.htm`;
+    location.href = `${href}/pages/home.htm`;
 };
