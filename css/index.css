@@ -1,0 +1,121 @@
+:root {
+    /** colors */
+    --green: rgb(23, 179, 65);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.flex {
+    height: 100vh;
+    margin: 0px 20px;
+    flex-direction: column;
+    width: 550px;
+}
+
+.top.flex {
+    margin: 20px 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.logo {
+    background-color: var(--green);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo>ion-icon {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.form {
+    width: 100%;
+}
+
+.form>h2 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form>h5 {
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+form.flex {
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0;
+}
+
+form>div>label {
+    text-transform: capitalize;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+form>div>input {
+    border-radius: 10px;
+    height: 40px;
+    font-size: .8rem;
+    padding-left: 20px;
+    text-transform: capitalize;
+    border: .1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-weight: 600;
+}
+
+form>div>input[type=email],
+form>div>input[type=password] {
+    text-transform: none;
+}
+
+.bottom.flex {
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bottom>button {
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.bottom>p {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.bottom>p>span {
+    color: var(--green);
+    font-weight: inherit;
+}

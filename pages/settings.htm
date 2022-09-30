@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex">
+        <span id="home">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </span>
+        <div>
+            <h3 id="hello">washing preferences</h3>
+            <p>Kindly pick your choice</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="color">
+            <span>color preference</span>
+            <div class="flex">
+                <span class="flex">
+                    <input type="radio" id="colored" name="color">
+                    <label for="colored">colored clothes</label>
+                </span>
+                <span class="flex">
+                    <input type="radio" id="white" name="color">
+                    <label for="white">white clothes</label>
+                </span>
+            </div>
+        </section>
+
+        <section class="temperature">
+            <span>washing temperature</span>
+            <div class="flex">
+                <span class="flex">
+                    <input type="radio" id="celsius" name="temperature">
+                    <label for="celsius">celsius degree</label>
+                </span>
+                <span class="flex">
+                    <input type="radio" id="farenheit" name="temperature">
+                    <label for="farenheit">farenheit degree</label>
+                </span>
+            </div>
+        </section>
+
+        <section class="other">
+            <span>other</span>
+            <div class="flex">
+                <span class="flex">
+                    <input type="checkbox" id="softener">
+                    <label for="softener">use softener</label>
+                </span>
+                <span class="flex">
+                    <input type="checkbox" id="bleach">
+                    <label for="bleach">bleaching agent</label>
+                </span>
+            </div>
+            <div class="flex">
+                <span class="flex">
+                    <input type="checkbox" id="heater">
+                    <label for="heater">dry heater</label>
+                </span>
+                <span class="flex">
+                    <input type="checkbox" id="scented">
+                    <label for="scented">scented detergent</label>
+                </span>
+            </div>
+        </section>
+
+        <section class="note flex">
+            <span>additional note</span>
+            <textarea name="additional"></textarea>
+        </section>
+
+        <section class="customize flex">
+            <input type="radio" id="customize">
+            <label for="customize">customize order</label>
+        </section>
+
+        <div class="flex">
+            <button>next</button>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../script/settings.js"></script>
+</body>
+
+</html>
